@@ -52,6 +52,38 @@ planner_configs:
     max_nearest_neighbors: 10  # use k nearest neighbors. default: 10
   PRMstarkConfigDefault:
     type: geometric::PRMstar
+  BITstarkConfigDefault:
+    type: geometric::BITstar
+  PDSTkConfigDefault:
+    type: geometric::PDST
+  STRIDEkConfigDefault:
+    type: geometric::STRIDE
+  FMTkConfigDefault:
+    type: geometric::FMT
+  BFMTkConfigDefault:
+    type: geometric::BFMT
+  SSTkConfigDefault:
+    type: geometric::SST
+  BiTRRTkConfigDefault:
+    type: geometric::BiTRRT
+  InformedRRTstarkConfigDefault:
+    type: geometric::InformedRRTstar
+  LBTRRTkConfigDefault:
+    type: geometric::LBTRRT
+  LazyLBTRRTkConfigDefault:
+    type: geometric::LazyLBTRRT
+  BiESTkConfigDefault:
+    type: geometric::BiEST
+  ProjESTkConfigDefault:
+    type: geometric::ProjEST
+  LazyPRMkConfigDefault:
+    type: geometric::LazyPRM
+  LazyPRMstarkConfigDefault:
+    type: geometric::LazyPRMstar
+  SPARSkConfigDefault:
+    type: geometric::SPARS
+  SPARStwokConfigDefault:
+    type: geometric::SPARStwo
 manipulator:
   default_planner_config: RRTConnectkConfigDefault
   planner_configs:
@@ -66,5 +98,21 @@ manipulator:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
+    - BITstarkConfigDefault
+    - PDSTkConfigDefault
+    - STRIDEkConfigDefault
+    - FMTkConfigDefault
+    - BFMTkConfigDefault
+    - SSTkConfigDefault
+    - BiTRRTkConfigDefault
+    - InformedRRTstarkConfigDefault
+    - LBTRRTkConfigDefault
+    - LazyLBTRRTkConfigDefault
+    - BiESTkConfigDefault
+    - ProjESTkConfigDefault
+    - LazyPRMkConfigDefault
+    - LazyPRMstarkConfigDefault
+    - SPARSkConfigDefault
+    - SPARStwokConfigDefault
   projection_evaluator: joints(joint_1,joint_2)
   longest_valid_segment_fraction: 0.05
