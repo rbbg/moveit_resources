@@ -52,8 +52,6 @@ planner_configs:
     max_nearest_neighbors: 10  # use k nearest neighbors. default: 10
   PRMstarkConfigDefault:
     type: geometric::PRMstar
-  BITstarkConfigDefault:
-    type: geometric::BITstar
   PDSTkConfigDefault:
     type: geometric::PDST
   STRIDEkConfigDefault:
@@ -62,16 +60,10 @@ planner_configs:
     type: geometric::FMT
   BFMTkConfigDefault:
     type: geometric::BFMT
-  SSTkConfigDefault:
-    type: geometric::SST
   BiTRRTkConfigDefault:
     type: geometric::BiTRRT
-  InformedRRTstarkConfigDefault:
-    type: geometric::InformedRRTstar
   LBTRRTkConfigDefault:
     type: geometric::LBTRRT
-  LazyLBTRRTkConfigDefault:
-    type: geometric::LazyLBTRRT
   BiESTkConfigDefault:
     type: geometric::BiEST
   ProjESTkConfigDefault:
@@ -98,16 +90,12 @@ manipulator:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-    - BITstarkConfigDefault
     - PDSTkConfigDefault
     - STRIDEkConfigDefault
     - FMTkConfigDefault
     - BFMTkConfigDefault
-    - SSTkConfigDefault
     - BiTRRTkConfigDefault
-    - InformedRRTstarkConfigDefault
     - LBTRRTkConfigDefault
-    - LazyLBTRRTkConfigDefault
     - BiESTkConfigDefault
     - ProjESTkConfigDefault
     - LazyPRMkConfigDefault
